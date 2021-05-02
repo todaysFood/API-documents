@@ -1,0 +1,15 @@
+site_name: todaysFood API Documents
+
+nav: 
+- README: readme.md
+
+theme:
+  name: "material"
+
+plugins:
+- search
+- mkdocstrings
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
