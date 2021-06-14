@@ -3,6 +3,7 @@ site_name: todaysFood API Documents
 nav: 
   - README: readme.md
   - Session: Session/manager.md
+  - Feed: posts.md
 
 theme:
   name: "material"
