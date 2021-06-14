@@ -8,7 +8,7 @@
 - Response
 
   ```json
-		      {
+  	{
             "id": 1,
             "title": "글 제목",
             "pub_date": "{timezone_now}",
