@@ -1,0 +1,529 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
+    
+    
+      
+        <title>Feed - todaysFood API Documents</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ca7ac06f.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="todaysFood API Documents" class="md-header__button md-logo" aria-label="todaysFood API Documents" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            todaysFood API Documents
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Feed
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="todaysFood API Documents" class="md-nav__button md-logo" aria-label="todaysFood API Documents" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    todaysFood API Documents
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="readme.html" class="md-nav__link">
+        README
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Session/manager.html" class="md-nav__link">
+        Session
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Feed
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="posts.html" class="md-nav__link md-nav__link--active">
+        Feed
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    피드 목록/등록
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    피드 상세보기/수정/삭제
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    피드 목록/등록
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    피드 상세보기/수정/삭제
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Feed</h1>
+                
+                <h2 id="_1">피드 목록/등록</h2>
+<blockquote>
+<p>URL: /api/feed/</p>
+<p>Method: GET   </p>
+</blockquote>
+<ul>
+<li>Request  <ul>
+<li>None</li>
+</ul>
+</li>
+<li>
+<p>Response
+    <div class="highlight"><pre><span></span><code><span class="err">HTTP</span> <span class="mi">200</span> <span class="err">OK</span>
+<span class="err">Co</span><span class="kc">ntent</span><span class="mi">-</span><span class="err">Type</span><span class="p">:</span> <span class="err">applica</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">/jso</span><span class="kc">n</span>
+<span class="err">Vary</span><span class="p">:</span> <span class="err">Accep</span><span class="kc">t</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Front URL</p>
+<ul>
+<li><code>Writing Here</code></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Method: POST</p>
+</blockquote>
+<ul>
+<li>Request</li>
+<li>Header
+   <div class="highlight"><pre><span></span><code>   <span class="p">{</span>
+   <span class="s2">&quot;Authorization : Bearer {JWT TOKEN VALUE}&quot;</span>
+   <span class="p">}</span>
+</code></pre></div></li>
+<li>Body
+  <code>json
+    {
+    "title" : 글 제목,
+    "rating" : 평점(0.0~5.0),
+    "place_id" : 장소 id,
+    "content" : 글 내용
+    }</code></li>
+</ul>
+<h2 id="_2">피드 상세보기/수정/삭제</h2>
+<blockquote>
+<p>Method: GET<br />
+URL: /api/feed/{post_id:int}/</p>
+</blockquote>
+<ul>
+<li>Request<ul>
+<li>None</li>
+</ul>
+</li>
+<li>
+<p>Response</p>
+<ul>
+<li>Normal
+  <div class="highlight"><pre><span></span><code><span class="err">HTTP</span> <span class="mi">200</span> <span class="err">OK</span>
+<span class="err">Co</span><span class="kc">ntent</span><span class="mi">-</span><span class="err">Type</span><span class="p">:</span> <span class="err">applica</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">/jso</span><span class="kc">n</span>
+<span class="p">{</span>
+  <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;글 제목&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;pub_date&quot;</span><span class="p">:</span> <span class="s2">&quot;{timezone_now}&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;modified_date&quot;</span><span class="p">:</span> <span class="s2">&quot;{수정일자, default=Null}&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;글 내용&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;rating&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;place_id&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
+  <span class="nt">&quot;author&quot;</span><span class="p">:</span> <span class="s2">&quot;{user.UUID}&quot;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>Front URL</p>
+<ul>
+<li><code>Writing here</code></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Method: PUT(수정)  </p>
+</blockquote>
+<ul>
+<li>
+<p>Request</p>
+<ul>
+<li>Header
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="s2">&quot;Authorization : Bearer {JWT TOKEN VALUE}&quot;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>Body
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+  <span class="nt">&quot;title&quot;</span> <span class="p">:</span> <span class="s2">&quot;제목 수정&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;rating&quot;</span> <span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span>
+  <span class="nt">&quot;place_id&quot;</span> <span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
+  <span class="nt">&quot;content&quot;</span> <span class="p">:</span> <span class="s2">&quot;수정 테스트&quot;</span>
+  <span class="p">}</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>Response</p>
+</li>
+<li>Normal (status : 200 OK)
+    <div class="highlight"><pre><span></span><code><span class="s2">&quot;Post edited&quot;</span>
+</code></pre></div></li>
+<li>글쓴이와 User가 일치하지 않을 때 (status : 403 Forbidden)
+    <div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;detail&quot;</span><span class="p">:</span> <span class="s2">&quot;이 작업을 수행할 권한(permission)이 없습니다.&quot;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>인증정보가 유효하지 않을 때 (status : 401 Unauthorized)
+    <div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;detail&quot;</span><span class="p">:</span> <span class="s2">&quot;Given token not valid for any token type&quot;</span><span class="p">,</span>
+<span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;token_not_valid&quot;</span><span class="p">,</span>
+<span class="nt">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;token_class&quot;</span><span class="p">:</span> <span class="s2">&quot;AccessToken&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;token_type&quot;</span><span class="p">:</span> <span class="s2">&quot;access&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Token is invalid or expired&quot;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></li>
+</ul>
+<blockquote>
+<p>Method: DELETE(삭제)<br />
+- Request
+    - Header
+    <div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="s2">&quot;Authorization : Bearer {JWT TOKEN VALUE}&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+</blockquote>
+<ul>
+<li>Response</li>
+<li>Normal (status : 204 No content)
+    <div class="highlight"><pre><span></span><code><span class="s2">&quot;Post deleted&quot;</span>
+</code></pre></div></li>
+<li>글쓴이와 User가 일치하지 않을 때 (status : 403 Forbidden)
+    <div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;detail&quot;</span><span class="p">:</span> <span class="s2">&quot;이 작업을 수행할 권한(permission)이 없습니다.&quot;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+<li>인증정보가 유효하지 않을 때 (status : 401 Unauthorized)
+    <div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;detail&quot;</span><span class="p">:</span> <span class="s2">&quot;Given token not valid for any token type&quot;</span><span class="p">,</span>
+<span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;token_not_valid&quot;</span><span class="p">,</span>
+<span class="nt">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;token_class&quot;</span><span class="p">:</span> <span class="s2">&quot;AccessToken&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;token_type&quot;</span><span class="p">:</span> <span class="s2">&quot;access&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Token is invalid or expired&quot;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="Session/manager.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Session" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Session
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+    
+  </body>
+</html>
